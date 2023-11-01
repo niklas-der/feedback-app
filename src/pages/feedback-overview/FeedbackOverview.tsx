@@ -4,15 +4,15 @@ import { mockFeedbacks } from "@/data/feedbacks";
 
 function FeedbackOverview() {
   return (
-    <>
+    <div className="xl:flex justify-center">
       <Header />
-      <AddFeedbackBar />
       <div className="space-y-8">
+        <AddFeedbackBar />
         {mockFeedbacks.map((feedback) => (
           <Feedback key={feedback.id} feedback={feedback} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

@@ -19,7 +19,7 @@ function FeedbackPage() {
   return (
     <div className="space-y-8">
       <Container>
-        <div className="flex justify-between mt-5">
+        <div className="flex justify-between items-center mt-5">
           <Link to={"/"}>
             <div className="flex items-center space-x-2">
               <div className="text-blue-700">
