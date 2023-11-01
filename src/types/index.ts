@@ -1,7 +1,13 @@
 export type FeedbackType = {
-    title: string;
-    content: string;
-    category: string;
-    num_upvotes: number;
-    num_comments: number;
+  id: number;
+  title: string;
+  content: string;
+  category: string;
+  num_upvotes: number;
+  num_comments: number;
 };
+
+export enum ButtonVariants {
+  Purple,
+  Blue,
+}

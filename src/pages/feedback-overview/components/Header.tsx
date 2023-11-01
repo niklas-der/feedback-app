@@ -1,4 +1,4 @@
-import Container from "./Container";
+import Container from "@/components/Container";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
       <Container>
         <div className="flex justify-between items-center py-6">
           <div className="space-y-1">
-            <h1 className="text-lg font-semibold">Frontend Mentor</h1>
+            <h1 className="text-xl font-semibold">Frontend Mentor</h1>
             <h2 className="text-sm">Feedback Board</h2>
           </div>
           <div>

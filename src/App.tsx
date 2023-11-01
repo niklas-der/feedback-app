@@ -1,24 +1,19 @@
-import { useState } from "react";
-import "./App.css";
-import AddFeedbackBar from "./components/AddFeedbackBar";
-import Feedback from "./components/Feedback";
-import Header from "./components/Header";
-import { mockFeedbacks } from "./mock/feedbacks";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { FeedbackOverview, FeedbackPage } from "./pages";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <FeedbackOverview />,
+  },
+  {
+    path: "feedbacks/:feedbackId",
+    element: <FeedbackPage />,
+  },
+]);
 
 function App() {
-  const [feedbacks] = useState(mockFeedbacks);
-
-  return (
-    <div>
-      <Header />
-      <AddFeedbackBar />
-      <div className="space-y-8">
-        {feedbacks.map((feedback) => (
-          <Feedback feedback={feedback} />
-        ))}
-      </div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

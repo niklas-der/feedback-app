@@ -1,5 +1,5 @@
 function Container({ children }: { children: React.ReactNode }) {
-  return <div className="max-w-screen-xl m-auto px-6">{children}</div>;
+  return <div className="max-w-screen-lg m-auto px-6">{children}</div>;
 }
 
 export default Container;
